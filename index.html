@@ -5,30 +5,46 @@
   <title>Tribute Page</title>
 </head>
 
-<body>
+<body id="main">
   <main>
     <header>
-      <h1>The Man This Tribute is For</h1>
-      <p>He did some things</p>
+      <br>
+      <h1 id="title">The Man This Tribute is For</h1>
+      <p>He did some things</p><br>
     </header>
     <article>
-
+      <div id="img-div">
+        <img id="image" src="../tributepage/grandpaVan.jpg" alt="Patrick VanAntwerp">
+        <figcaption id="img-caption">Image of the Tribute man</figcaption>
+      </div>
+      <div id="tribute-info">
+        <p>This is going to be a bunch of info soon...</p><br>
+        <a id="tribute-link" href="" target="_blank">More information about the Tribute Man</a>
+      </div>
     </article>
     <footer>
 
     </footer>
   </main>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 
 </html>
 
 <style>
-  body {
+  .main {
     width: 100%;
+    background-color: lightslategray;
   }
-
+  #img-caption {
+    text-align: center;
+    font-style: italic;
+  }
+  #image {
+    text-align: center;
+  }
   header {
-    background-color: brown;
+    background-color: tan;
     color: black;
   }
 
