@@ -1,47 +1,73 @@
 <!DOCTYPE html>
 <html>
+<main>
 
-<head>
-  <title>Tribute Page</title>
-</head>
+  <head>
+    <title>Tribute Page</title>
+  </head>
 
-<body id="main">
-  <main>
-    <header>
-      <br>
-      <h1 id="title">The Man This Tribute is For</h1>
-      <p>He did some things</p><br>
-    </header>
-    <article>
-      <div id="img-div">
-        <img id="image" src="../tributepage/grandpaVan.jpg" alt="Patrick VanAntwerp">
-        <figcaption id="img-caption">Image of the Tribute man</figcaption>
-      </div>
-      <div id="tribute-info">
-        <p>This is going to be a bunch of info soon...</p><br>
-        <a id="tribute-link" href="" target="_blank">More information about the Tribute Man</a>
-      </div>
-    </article>
-    <footer>
+  <body id="main">
+      <header>
+        <br>
+        <h1 id="title">Patrick LeRoy VanAntwerp</h1>
+        <p>Husband, Father, and Veteran</p><br>
+      </header>
+      <article>
+        <div id="img-div">
+          <img id="image" src="../tributepage/grandpaVan.jpg" alt="Patrick VanAntwerp">
+          <figcaption id="img-caption">Patrick VanAntwerp in his iconic cowboy hat</figcaption>
+        </div>
+        <div id="tribute-info">
+          <br><a id="tribute-link" href="https://www.ancestry.com/boards/localities.northam.usa.states.colorado.counties.larimer/3455/mb.ashx" target="_blank">The following excerpt is from an obituary on ancestry.com:</a><br>
+          <blockquote class="infoParagraph">"Patrick LeRoy Van Antwerp, 58, of Berthoud died of cancer Sept. 26, 2003, at his home.
+              He was born July 11, 1945, in Sioux City, Iowa, to Robert John Van Antwerp and Lillian Warrick Van Antwerp. He graduated from Rancho High School in Las Vegas, Nev.
+              He married Mary Louise Kinch on July 12, 1966, in Mead.
+              He moved from Las Vegas to Loveland in 1966, and he later moved to Berthoud.
+              Mr. Van Antwerp served in the U.S. Air Force from 1965 to 1988 and retired at the rank of master sergeant. He was the crew chief on Air Force 2. After retiring from the service, he worked for the Loveland Fire Department, Gerrity Oil and King Soopers.
+              He was a member of the Masonsâ€™ Longs Peak Lodge 197, past master of Lodge 83 in Berthoud, past patron of Columbine Chapter 11 of the Order of the Eastern Star and a member of Ladybug Clown Alley.
+              He enjoyed fishing and clowning..."</blockquote><br>
+        </div>
+      </article>
+      <footer>
 
-    </footer>
-  </main>
-  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-</body>
+      </footer>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</main>
 
 </html>
 
 <style>
-  .main {
-    width: 100%;
-    background-color: lightslategray;
+  :root{
+    background-color: lightgray;
+  }
+
+  .infoParagraph {
+    text-indent: 1.5em;
+    text-align: left;
   }
   #img-caption {
+    margin-top: 10px;
+    font-size: 22px;
     text-align: center;
     font-style: italic;
   }
+  #tribute-info {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+  }
   #image {
-    text-align: center;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    min-width: 400px;
+    max-width: 700px;
+    display: block;
+  }
+  footer {
+    background-color: tan;
   }
   header {
     background-color: tan;
@@ -56,5 +82,8 @@
   p {
     font-size: 24px;
     text-align: center;
+  }
+  blockquote {
+    font-size: 18px;
   }
 </style>
